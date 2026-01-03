@@ -1,0 +1,13 @@
+!git clone https://github.com/sp-uhh/sgmse.git
+%cd sgmse
+
+!pip install -r requirements.txt
+!pip install pytorch-lightning==1.9.0  # Installing a stable version compatible with the code
+!pip install -r /kaggle/working/sgmse/requirements.txt > /dev/null
+!pip install torchaudio --upgrade > /dev/null
+!pip install soundfile resampy > /dev/null
+!pip install torch soundfile pesq pystoi tqdm
+!pip install pesq pystoi "numpy<2.0"
+!pip install librosa
+!pip install numpy soundfile torch pesq pystoi speechmos tqdm pandas onnxruntime
+print("Dependencies installed!")
