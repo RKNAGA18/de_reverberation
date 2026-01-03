@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ignore large model files (upload to a drive instead if they are >100MB)
+*.ckpt
+*.pth
+
+# Ignore audio data
+dataset/
+enhanced_output*/
+
+# Ignore Python cache
+__pycache__/
+.ipynb_checkpoints/
